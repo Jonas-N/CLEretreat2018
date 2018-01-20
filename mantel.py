@@ -11,11 +11,21 @@ from scipy import mean, random, spatial, stats, std
 
 
 ############ INSERT pairwise_distances() ############
+#Team 2 code
+def pairwise_distances(myList):
+	n = len(myList)
+	pairwise_dist = []
+
+	for i in range(n-1):
+    	for j in range(i+1,n):
+    		dist = levenshtein_distance(i,j)
+			pairwise_dist.append(dist)
+
+	return pairwise_dist
 
 
 
 ############ END OF pairwise_distances() ############
-
 
 ############ INSERT monte_carlo() ############
 
